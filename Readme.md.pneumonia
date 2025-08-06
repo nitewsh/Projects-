@@ -1,0 +1,22 @@
+A Convolutional Neural Network (CNN) model built with TensorFlow to classify chest X-ray images as Normal or Pneumonia. It processes image datasets from different folders, applies preprocessing, trains a deep learning model, and evaluates its accuracy.
+
+🔧 Tech Stack
+Python
+TensorFlow / Keras
+OpenCV
+Matplotlib
+Scikit-learn
+
+🚀 Features
+Image classification (Binary: Normal vs Pneumonia)
+Manual dataset loading and preprocessing using OpenCV CNN model with dropout regularization to reduce overfitting Performance evaluation with classification report Model saved as pneumonia_model.h5.
+Test Accuracy: 0.9465
+ Classification Report:
+               precision    recall  f1-score   support
+
+           0       0.95      0.86      0.90       252
+           1       0.95      0.98      0.96       627
+
+    accuracy                           0.95       879
+   macro avg       0.95      0.92      0.93       879
+weighted avg       0.95      0.95      0.95       879
