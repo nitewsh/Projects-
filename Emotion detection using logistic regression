@@ -1,0 +1,28 @@
+This NLP project classifies text into emotional categories (like joy, sadness, anger, etc.) using a TF-IDF-based pipeline and a tuned logistic regression model.
+
+ Dataset
+Source: Emotion Dataset (train, val, test split)
+
+Format: Each line → text ; label
+
+Emotions include: joy, anger, sadness, fear, love, surprise
+
+ Pipeline
+Label Encoding: Converts emotion strings to numbers
+
+TF-IDF Vectorization: Transforms text into numerical features
+
+MaxAbsScaler: Scales sparse data while preserving sparsity
+
+Model: LogisticRegression with GridSearchCV over:
+
+C: [0.1, 1, 10]
+
+solver: ['liblinear', 'saga']
+
+penalty: ['l1', 'l2']
+  Accuracy: 0.9020
+ Precision: 0.9011
+ Recall: 0.9020
+ F1 Score: 0.9013
+ MSE: 0.6310
