@@ -1,0 +1,23 @@
+A machine learning project using the Breast Cancer Wisconsin dataset to classify malignant and benign tumors. The model is trained with hyperparameter-tuned Random Forest and evaluated with multiple metrics and visualizations.
+
+🔧 Tech Stack
+Python
+
+Scikit-learn
+
+Matplotlib / Seaborn
+
+ Highlights
+Uses RandomForestClassifier with GridSearchCV for hyperparameter tuning
+
+Feature normalization with StandardScaler
+
+Evaluated using accuracy, precision, recall, F1 score, AUC, and MSE
+
+Confusion matrix plotted for detailed error analysis
+ Accuracy:  0.9474
+ Precision: 0.9583
+ Recall:    0.9583
+ F1 Score:  0.9583
+ MSE:       0.0526
+ AUC:       0.9931
