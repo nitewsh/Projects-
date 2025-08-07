@@ -1,0 +1,26 @@
+A deep learning-based image classifier built with TensorFlow/Keras to detect and categorize brain tumors into four types. It uses CNN architecture with categorical cross-entropy loss and supports performance evaluation with multiple metrics and a confusion matrix.
+
+🔧 Tech Stack
+Python
+
+TensorFlow / Keras
+
+Scikit-learn
+
+Matplotlib
+
+🧪 Features
+Classifies MRI images into 4 categories of brain tumors
+
+Data preprocessing using ImageDataGenerator
+
+CNN with dropout regularization to prevent overfitting
+
+Evaluation using precision, recall, F1-score, and MSE
+
+Model saved as brain_tumor_classifier.h5
+  Accuracy: 0.9375
+ Precision: 0.9367
+ Recall: 0.9375
+ F1 Score: 0.9368
+ MSE: 0.1175
