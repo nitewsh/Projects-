@@ -1,0 +1,38 @@
+This project builds a sentiment analysis model that classifies movie reviews as positive or negative using machine learning and natural language processing (NLP) techniques.
+
+🔧 Tech Stack
+Python
+
+Scikit-learn
+
+NLTK
+
+TF-IDF Vectorization
+
+Logistic Regression / SVM
+
+Seaborn & Matplotlib for visualization
+
+📌 Highlights
+IMDB dataset of 50,000 reviews
+
+Preprocessing includes:
+
+Lowercasing, punctuation removal, URL stripping, HTML tag removal
+
+Stopwords filtering
+
+Models evaluated: LogisticRegression, LinearSVC
+Classification Report:
+               precision    recall  f1-score   support
+
+           0       0.92      0.89      0.91      4951
+           1       0.90      0.93      0.91      5049
+
+    accuracy                           0.91     10000
+   macro avg       0.91      0.91      0.91     10000
+weighted avg       0.91      0.91      0.91     10000
+
+GridSearchCV used for hyperparameter tuning
+
+Visualized using confusion matrix heatmap
