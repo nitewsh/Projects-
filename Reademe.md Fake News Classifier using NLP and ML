@@ -1,0 +1,36 @@
+This project builds a binary text classification model to distinguish real vs fake news using NLP and machine learning algorithms on selected categories from the 20 Newsgroups dataset.
+
+🔧 Tech Stack
+Python
+
+Scikit-learn
+
+NLP (TF-IDF Vectorization)
+
+Matplotlib / Seaborn
+
+📌 Highlights
+Dataset created using selected "real" and "fake" news categories
+
+Text features extracted using TfidfVectorizer
+
+Two models trained and tuned: MultinomialNB and LogisticRegression
+
+Evaluation based on accuracy, precision, recall, F1 score, AUC
+
+ROC curves and confusion matrix plotted for best model
+ MultinomialNB
+Accuracy:  0.9343
+Precision: 0.9294
+Recall:    0.9320
+F1 Score:  0.9307
+AUC:       0.9826
+
+ LogisticRegression
+Accuracy:  0.9276
+Precision: 0.9259
+Recall:    0.9207
+F1 Score:  0.9233
+AUC:       0.9786
+
+ Best Model: MultinomialNB
