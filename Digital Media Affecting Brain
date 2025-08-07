@@ -1,0 +1,48 @@
+This deep learning project predicts whether a person frequently feels depressed or down using survey responses. It handles imbalanced data using SMOTE, focal loss, and K-Fold cross-validation.
+
+ Dataset
+Custom survey-based dataset: smmh.csv
+
+Target:
+18. How often do you feel depressed or down?
+Encoded as:
+
+1: Feels down (score between 3–5)
+
+0: Otherwise
+
+⚙ Pipeline Overview
+ Preprocessing
+One-hot encoding for categorical features
+
+SMOTE for balancing classes
+
+RobustScaler → QuantileTransformer → PowerTransformer for normalization
+
+PCA for dimensionality reduction (98% variance retained)
+
+ Model Architecture (TensorFlow / Keras)
+Deep Neural Network with:
+
+Swish + ReLU activations
+
+BatchNormalization & Dropout layers
+
+L2 Regularization
+
+Optimizer: Adam
+
+Loss: Focal Loss (γ=2.0, α=0.42)
+
+ Training Strategy
+5-Fold Stratified Cross-Validation
+
+EarlyStopping with validation split
+
+Class weights computed automatically
+Average Metrics Across Folds 
+Accuracy: 97.64%
+Precision: 0.97
+Recall: 0.98
+F1 Score: 0.98
+MSE: 0.0236
