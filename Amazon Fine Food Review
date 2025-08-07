@@ -1,0 +1,30 @@
+This project performs binary sentiment classification (Positive/Negative) on Amazon product reviews using TF-IDF vectorization and Logistic Regression.
+
+🧠 Dataset
+Source: Amazon Fine Food Reviews
+
+Total Reviews: 500K+ (sample used)
+
+Only non-neutral scores considered:
+
+Score > 3 → Positive (1)
+
+Score < 3 → Negative (0)
+
+Score == 3 → Removed (neutral)
+
+🛠️ Pipeline
+Text Preprocessing: Lowercasing, URL & punctuation removal
+
+Vectorization: TfidfVectorizer(max_features=5000)
+
+Model: LogisticRegression
+ Confusion Matrix:
+ [[11513  4866]
+ [ 2093 86691]]
+
+ Accuracy: 0.9338
+ Precision: 0.9469
+ Recall: 0.9764
+ F1 Score: 0.9614
+ MSE: 0.0662
